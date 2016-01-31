@@ -1,0 +1,9 @@
+{
+  "id": "admin",
+  "pass": {
+    "encrypted_data": "Xi5TPiaoIEZREvi0KSnlpRw5JhFV0DiZf/RkrTJBhiI=\n",
+    "iv": "MBQ2PkcFHJyGiKsCeDi3Ww==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

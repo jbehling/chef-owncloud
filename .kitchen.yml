@@ -1,0 +1,23 @@
+---
+driver:
+  name: vagrant
+  vagrantfile_erb: vagrantfile.erb
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    driver:
+      network:
+        - ["forwarded_port", {guest: 80, host: 8080}]
+        - ["forwarded_port", {guest: 443, host: 8443}]
+        - ["forwarded_port", {guest: 3306, host: 3306}]
+    run_list:
+        - "recipe[owncloud::db]"
+        - "recipe[owncloud::web]"
+    attributes:
+    data_bags_path: "test/integration/default/data_bags"
+    encrypted_data_bag_secret_key_path: "test/integration/default/encrypted_data_bag_secret"

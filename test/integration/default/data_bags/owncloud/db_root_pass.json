@@ -1,0 +1,9 @@
+{
+  "id": "db_root_pass",
+  "pass": {
+    "encrypted_data": "7+OuVJgYXHkTyDjXaYBqNCTqno7N8/r4bpmeDUKCT5Q=\n",
+    "iv": "kkoRCVLX4wzOgW68E1jaUQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
